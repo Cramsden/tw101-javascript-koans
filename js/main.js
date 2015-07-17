@@ -10,9 +10,13 @@ $(document).ready(function() {
     fareForRide(6, 8, false);
 
     // Problem 4
-    // call your problem 4 code here
+    moneyCounter(10, 20, 100, 13);
 
     // Problem 5
-    // call your problem 5 code here
+    urduTextReverser( [
+                          ["zara", "dhyaan", "dein"],
+                          ["mazarat", "chahenge"],
+                          ["attention", "please"]
+                      ]);
 
 });

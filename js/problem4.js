@@ -26,4 +26,23 @@
 
 */
 
-// Write your JavaScript here
+function changeElementText(element, answer) {
+    $(element).text(answer);
+}
+
+function moneyCounter(){
+    var notes = [];
+    var acceptedNotes = [5, 10, 20, 50, 100, 500];
+    var total = 0;
+    for(var i=0;i<arguments.length; i++)
+    {
+        notes.push(arguments[i]);
+        if(acceptedNotes.indexOf(arguments[i]) != -1)
+        {
+            total += arguments[i];
+        }
+    }
+    notes = notes.join(", ");
+    changeElementText("#rupeeNotes", notes);
+    changeElementText("#totalRupees", total);
+}
